@@ -23,6 +23,14 @@ body {
     background-color: #01ECCB;
 }
 
+header > button {
+    
+}
+
+body {
+    background-color: #01ECCB;
+}
+
 main{
     font-family: sans-serif;;
     display: flex; 
