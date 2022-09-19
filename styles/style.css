@@ -4,7 +4,7 @@ header{
     position: absolute;
     left: 0;
     right: 0;
-    border: 4mm ridge rgba(178,242,223);
+    border: double white;
     width: 95%;
     top: 0;
     margin-left: auto;
