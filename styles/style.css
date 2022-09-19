@@ -1,3 +1,7 @@
+*{
+    font-family: sans-serif;
+}
+
 :root{
     --fdndGroen: #01ECCB;
     --fdndBlauw: #050542;
@@ -9,23 +13,21 @@ header{
     position: absolute;
     left: 0;
     right: 0;
-    border: 4mm ridge rgba(178,242,223);
-    width: 95%;
+    border: 4mm  rgba(178,242,223);
+    width: 50%;
     top: 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
     text-shadow: 5px 5px 10px black;
-    background-color:#050542;
-    color: #66e5bf;
+    background-color:var(--fdndBlauw);
+    color: var(--fdndGroen);
 }
 
-header > button {
-    
-}
+
 
 body {
-    background-color: #01ECCB;
+    background-color: var(--fdndGroen);
 }
 
 header > button {
@@ -34,7 +36,7 @@ header > button {
     background: none;
     border: none;
     position: absolute;
-    left: -150%;
+    left: -50%;
 }
 
 
@@ -56,10 +58,14 @@ body.darkmode {
     color: var(--fdndGroen);
 }
 
+.darkmode header{
+    background-color: var(--fdndGroen);
+    color: var(--fdndBlauw);
+}
+
 
 
 main{
-    font-family: sans-serif;;
     display: flex; 
 }
 
