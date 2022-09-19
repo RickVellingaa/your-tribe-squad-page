@@ -17,9 +17,6 @@ main{
     align-items: center;
 }
 
-span{
-
-}
 
 span > p:nth-of-type(1){
     border: 1px solid black;
