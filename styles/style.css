@@ -3,16 +3,29 @@
     --fdndBlauw: #050542;
 }
 
-header {
-    border: 1px solid red;
+header{
     width: 25%;
     height: 5em;
     position: absolute;
     left: 0;
     right: 0;
+    border: 4mm ridge rgba(178,242,223);
+    width: 95%;
     top: 0;
     margin-left: auto;
     margin-right: auto;
+    text-align: center; 
+    text-shadow: 5px 5px 10px black;
+    background-color:#050542;
+    color: #66e5bf;
+}
+
+header > button {
+    
+}
+
+body {
+    background-color: #01ECCB;
 }
 
 header > button {
@@ -57,7 +70,6 @@ main {
     align-content: center;
     align-items: center;
 }
-
 
 span > p:nth-of-type(1){
     /* border: 4px solid #01ECCB; */
