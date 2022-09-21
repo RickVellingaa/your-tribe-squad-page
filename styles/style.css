@@ -1,4 +1,4 @@
-*{
+* {
     font-family: sans-serif;
 }
 
@@ -95,6 +95,12 @@ figure img {
     padding-left: 2em;
     z-index: 3;
 }
+
+figure a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 ul{
     display: flex;
