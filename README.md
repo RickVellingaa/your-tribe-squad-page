@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1>Squad Page</h1>
 
 <h2>Beschrijving</h2>
@@ -30,6 +29,3 @@ Code Skilss:
 
 
 
-=======
-> Fork deze leertaak en ga aan de slag, de instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
->>>>>>> parent of ae253a9 (Merge branch 'main' of https://github.com/MokhtarAkle/your-tribe-squad-page)
