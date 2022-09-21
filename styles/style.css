@@ -1,4 +1,4 @@
-*{
+* {
     font-family: sans-serif;
 }
 
@@ -19,7 +19,6 @@ header{
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
-    text-shadow: 5px 5px 10px black;
     background-color:var(--fdndBlauw);
     color: var(--fdndGroen);
 }
@@ -88,6 +87,12 @@ figure img {
     padding-left: 2em;
     z-index: 3;
 }
+
+figure a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 ul{
     display: flex;
