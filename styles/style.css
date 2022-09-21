@@ -131,6 +131,10 @@ ul {
     z-index: 2;
 }
 
+figure{
+    margin: auto;
+}
+
 #info-text {
     font-size: 1.2em;
     color: var(--fdndGroen);
