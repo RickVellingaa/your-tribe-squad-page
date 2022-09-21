@@ -27,6 +27,9 @@ header {
     font-size: 30px;
     border: 2px solid var(--fdndBlauw);
     margin: 0;
+    text-align: center;
+    color: var(--fdndBlauw);
+    outline: none;
 }
 
 #search-bar::placeholder{
@@ -74,6 +77,8 @@ body.darkmode {
 
 .darkmode #search-bar{
     border: 2px solid var(--fdndGroen);
+    color: var(--fdndGroen);
+
 }
 
 
