@@ -6,6 +6,8 @@ var a;
 var i;
 var txtValue;
 
+// functie die checkt of de body een bepaalde class heeft en gebaseerd daarop wordt een darkmode class toegevoegd of verwijdert. 
+// De gebruikte foto wordt verandert door gebruik te maken van .src om direct de style van de img te veranderen
 function changeDark() {
     if(bodyDark.classList.contains("darkmode")){
         bodyDark.classList.remove("darkmode");    
@@ -17,6 +19,9 @@ function changeDark() {
         document.getElementById("img-change").src="./assets/light-mode.png";
     }
 }
+
+// functie die gebruikt maakt van een for loop om de ingevoerde letters bij de input te lezen en te vergelijken met de content van de a tags die zich bevinden in de figcaption.
+// de text en foto's worden vervolgens met .style verstopt door hun display op none te zetten.
 
 function searchTest(){
     var input = document.querySelector("#search-bar");
@@ -38,5 +43,7 @@ function searchTest(){
         }
     }
 }
+// event listeners toevoegen aan de dark mode button en zoekbalk
+
 darkButton.addEventListener("click", changeDark);
 searchFunction.addEventListener("keyup", searchTest);

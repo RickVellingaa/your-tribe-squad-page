@@ -1,171 +1,166 @@
 * {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-:root{
-    --fdndGroen: #01ECCB;
-    --fdndBlauw: #050542;
+/* Globale CSS variabele instellen voor veel gebruikte kleuren */
+:root {
+  --fdndGroen: #01eccb;
+  --fdndBlauw: #050542;
 }
 
-header{
-    width: 25%;
-    height: 5em;
-    position: absolute;
-    left: 0;
-    right: 0;
-    border: 4mm  rgba(178,242,223);
-    width: 50%;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; 
-    background-color:var(--fdndBlauw);
-    color: var(--fdndGroen);
+header {
+  width: 25%;
+  height: 5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 4mm rgba(178, 242, 223);
+  width: 50%;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--fdndBlauw);
+  color: var(--fdndGroen);
 }
 
-#search-bar{
-    font-size: 35px;
-    
+#search-bar {
+  font-size: 35px;
 }
 
 body {
-    background-color: var(--fdndGroen);
+  background-color: var(--fdndGroen);
 }
 
 header > button {
-    width: 48px;
-    height: 48px;
-    background: none;
-    border: none;
-    position: absolute;
-    left: -50%;
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  position: absolute;
+  left: -50%;
 }
 
-
-
+/* Kleuren omdraaien door gebruik te maken van een darkmode class in combinatie met JS Button */
 body {
-    background-color: var(--fdndGroen);
+  background-color: var(--fdndGroen);
 }
 
 body.darkmode {
-    background-color: var(--fdndBlauw);
+  background-color: var(--fdndBlauw);
 }
 
-.darkmode #info-text{
-    color: var(--fdndBlauw);
-    background-color: var(--fdndGroen);
+.darkmode #info-text {
+  color: var(--fdndBlauw);
+  background-color: var(--fdndGroen);
 }
 
-.darkmode figcaption{
-    color: var(--fdndGroen);
+.darkmode figcaption {
+  color: var(--fdndGroen);
 }
 
-.darkmode header{
-    background-color: var(--fdndGroen);
-    color: var(--fdndBlauw);
+.darkmode header {
+  background-color: var(--fdndGroen);
+  color: var(--fdndBlauw);
 }
-
-
-
-main{
-    display: flex; 
-}
-
 
 main {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: center;
+  display: flex;
 }
 
-span > p:nth-of-type(1){
-    /* border: 4px solid #01ECCB; */
-    background-color: var(--fdndBlauw);
-    margin-top: 10em;
-    width: 45em;
-    padding: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+}
+
+div > p:nth-of-type(1) {
+  /* border: 4px solid #01ECCB; */
+  background-color: var(--fdndBlauw);
+  margin-top: 10em;
+  width: 45em;
+  padding: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 figure img {
-    max-width: 15em;
-    padding: 1em;
-    padding-right: 2em;
-    padding-left: 2em;
-    z-index: 3;
+  max-width: 15em;
+  padding: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  z-index: 3;
 }
 
-figure a{
-    text-decoration: none;
-    color: inherit;
+figure a {
+  text-decoration: none;
+  color: inherit;
 }
-
-
-ul{
-    display: flex;
-    flex-flow: row wrap;
-    width: 65vw;
-    list-style-type: none;
-    justify-content: space-around;
-    margin-top: 5em;
-}
-
-
-figcaption{
-    text-align: center;
-}
-
 
 ul {
-    margin: 0;
-    outline: none;
-    margin-top: 20px;
-    padding: 0;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    z-index: 2;
+  display: flex;
+  flex-flow: row wrap;
+  width: 65vw;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 5em;
 }
 
-figure{
-    margin: auto;
+figcaption {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  outline: none;
+  margin-top: 20px;
+  padding: 0;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  z-index: 2;
+}
+
+figure {
+  margin: auto;
 }
 
 #info-text {
-    font-size: 1.2em;
-    color: var(--fdndGroen);
+  font-size: 1.2em;
+  color: var(--fdndGroen);
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
-@media screen and (max-width: 1140px){
-    header{
-        width: auto;
-    }
+/* Responsive elementen opzetten door @media te gebruiken in combinatie met breakpoints */
 
-    span>p:nth-of-type(1) {
-        width: auto;
-    }
-    ul {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (max-width: 1140px) {
+  header {
+    width: auto;
+  }
+
+  span > p:nth-of-type(1) {
+    width: auto;
+  }
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 860px) {
-    ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 560px) {
-    ul {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0PX;
-    }
+  ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
 }
