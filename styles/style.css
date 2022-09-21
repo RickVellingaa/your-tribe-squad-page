@@ -23,11 +23,6 @@ header{
     color: var(--fdndGroen);
 }
 
-<<<<<<< HEAD
-#search-bar{
-    font-size: 35px;
-    
-=======
 #search-bar {
     font-size: 30px;
     border: 2px solid var(--fdndBlauw);
@@ -41,7 +36,6 @@ header{
     font-size: 1em;
     text-align: center;
     margin: auto;
->>>>>>> parent of ae253a9 (Merge branch 'main' of https://github.com/MokhtarAkle/your-tribe-squad-page)
 }
 
 body {
@@ -57,7 +51,9 @@ header > button {
     left: -50%;
 }
 
-
+figure{
+    margin: auto;
+}
 
 body {
     background-color: var(--fdndGroen);
@@ -90,14 +86,6 @@ main{
 
 main {
     display: flex;
-<<<<<<< HEAD
-=======
-}
-
-
-main {
-    display: flex;
->>>>>>> parent of ae253a9 (Merge branch 'main' of https://github.com/MokhtarAkle/your-tribe-squad-page)
     flex-flow: column wrap;
     align-content: center;
     align-items: center;
@@ -202,6 +190,13 @@ ul {
     left: 50px; /*position where enlarged image should offset horizontally */
   }
 
+  @media screen and (max-width: 1260px){
+
+    ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (max-width: 1140px){
     header{
         width: auto;
@@ -209,9 +204,6 @@ ul {
 
     span>p:nth-of-type(1) {
         width: auto;
-    }
-    ul {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
 
