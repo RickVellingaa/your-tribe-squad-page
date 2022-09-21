@@ -23,21 +23,6 @@ header {
     color: var(--fdndGroen);
 }
 
-#search-bar {
-    font-size: 30px;
-    border: 2px solid var(--fdndBlauw);
-    margin: 0;
-    text-align: center;
-    color: var(--fdndBlauw);
-    outline: none;
-}
-
-#search-bar::placeholder{
-    font-size: 1em;
-    text-align: center;
-    margin: auto;
-}
-
 body {
     background-color: var(--fdndGroen);
 }
@@ -50,8 +35,6 @@ header>button {
     position: absolute;
     left: -50%;
 }
-
-
 
 body {
     background-color: var(--fdndGroen);
@@ -85,7 +68,6 @@ body.darkmode {
 main {
     display: flex;
 }
-
 
 main {
     display: flex;
@@ -189,4 +171,4 @@ figure {
         grid-template-columns: repeat(1, 1fr);
         gap: 0px;
     }
-}
+} 
