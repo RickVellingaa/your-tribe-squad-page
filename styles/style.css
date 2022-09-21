@@ -23,9 +23,25 @@ header{
     color: var(--fdndGroen);
 }
 
+<<<<<<< HEAD
 #search-bar{
     font-size: 35px;
     
+=======
+#search-bar {
+    font-size: 30px;
+    border: 2px solid var(--fdndBlauw);
+    margin: 0;
+    text-align: center;
+    color: var(--fdndBlauw);
+    outline: none;
+}
+
+#search-bar::placeholder{
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+>>>>>>> parent of ae253a9 (Merge branch 'main' of https://github.com/MokhtarAkle/your-tribe-squad-page)
 }
 
 body {
@@ -74,6 +90,14 @@ main{
 
 main {
     display: flex;
+<<<<<<< HEAD
+=======
+}
+
+
+main {
+    display: flex;
+>>>>>>> parent of ae253a9 (Merge branch 'main' of https://github.com/MokhtarAkle/your-tribe-squad-page)
     flex-flow: column wrap;
     align-content: center;
     align-items: center;
