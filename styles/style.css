@@ -25,7 +25,18 @@ header {
 }
 
 #search-bar {
-  font-size: 35px;
+    font-size: 30px;
+    border: 2px solid var(--fdndBlauw);
+    margin: 0;
+    text-align: center;
+    color: var(--fdndBlauw);
+    outline: none;
+}
+
+#search-bar::placeholder{
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
 }
 
 body {
@@ -42,6 +53,10 @@ header > button {
 }
 
 /* Kleuren omdraaien door gebruik te maken van een darkmode class in combinatie met JS Button */
+figure{
+    margin: auto;
+}
+
 body {
   background-color: var(--fdndGroen);
 }
@@ -99,6 +114,25 @@ figure a {
   color: inherit;
 }
 
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    width: 65vw;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+
+figcaption{
+    text-align: center;
+}
+
+
+/* Styling zorgt ervoor dat alle items in de ul (foto's en captions) 
+worden ingedeeld in 4 rijen en dat er ruimte komt tussen de kolommen */
+
 ul {
   display: flex;
   flex-flow: row wrap;
@@ -137,30 +171,67 @@ figure {
   text-align: center;
 }
 
-/* Responsive elementen opzetten door @media te gebruiken in combinatie met breakpoints */
-
-@media screen and (max-width: 1140px) {
-  header {
-    width: auto;
+.thumbnail {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .thumbnail:hover {
+    background-color: transparent;
+    z-index: 50;
+  }
+  
+  .thumbnail span {
+    /*CSS for enlarged image*/
+    position: absolute;
+    background-color: lightyellow;
+    padding: 5px;
+    left: -1000px;
+    border: 1px dashed gray;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .thumbnail span img {
+    /*CSS for enlarged image*/
+    border-width: 0;
+    padding: 2px;
+  }
+  
+  .thumbnail:hover span {
+    /*CSS for enlarged image on hover*/
+    visibility: visible;
+    bottom: 250px;
+    left: 50px; /*position where enlarged image should offset horizontally */
   }
 
-  span > p:nth-of-type(1) {
-    width: auto;
-  }
-  ul {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  @media screen and (max-width: 1260px){
+
+    ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media screen and (max-width: 860px) {
-  ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media screen and (max-width: 1140px){
+    header{
+        width: auto;
+    }
+
+    span>p:nth-of-type(1) {
+        width: auto;
+    }
 }
 
-@media screen and (max-width: 560px) {
-  ul {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0px;
-  }
+@media screen and (max-width: 920px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 590px) {
+    ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
 }
