@@ -1,9 +1,10 @@
 var darkButton = document.querySelector("#dark-button");
 var bodyDark = document.querySelector("body");
-
 var searchFunction = document.querySelector("#search-bar");
-
-
+var ul = document.querySelector("#search-container");
+var a;
+var i;
+var txtValue;
 
 function changeDark() {
     if(bodyDark.classList.contains("darkmode")){
@@ -20,13 +21,10 @@ function changeDark() {
 function searchTest(){
     var input = document.querySelector("#search-bar");
     var filter = input.value.toUpperCase();
-    var ul = document.querySelector("#search-container");
-    var figcap = ul.getElementsByTagName("figcaption");
-    var fig = ul.getElementsByTagName("figure");
-    var a;
-    var i;
-    var txtValue;
+    var figcap = ul.querySelectorAll("figcaption");
+    var fig = ul.querySelectorAll("figure");
 
+    console.log("figcap", figcap.length);
     for(i = 0; i < figcap.length; i++){
         a = figcap[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
