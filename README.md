@@ -1,5 +1,7 @@
 <h1>Squad Page</h1>
 
+URL: https://mokhtarakle.github.io/your-tribe-squad-page/
+
 <h2>Beschrijving</h2>
 In week 1 hadden we de opdracht gekregen om allemaal indivudeel een visitekaartje te maken. De leertaak van afgelopen- en deze week is om een website te bouwen waar alle visitekaartjes van onze squad gepresenteerd worden. Deze opdracht doen we samen binnen een team. 
 
@@ -27,5 +29,4 @@ Code Skilss:
 - CSS
 - JavaScript
 
-
-
+URL: https://mokhtarakle.github.io/your-tribe-squad-page/
